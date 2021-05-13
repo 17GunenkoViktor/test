@@ -7,7 +7,7 @@
 #include <string.h>
 int main()
 {
-    int i, k, err; 
+    int i, err; 
     char Desc[9][9];
     StartDesk(Desc);
     move[0] = '6';
