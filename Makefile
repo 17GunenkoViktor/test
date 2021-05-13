@@ -14,19 +14,19 @@ $(CHS)/main.o: $(SCHS)/main.c
 		$(CC) $(CFLAGS) $(CHS)/main.o $(SCHS)/main.c
 
 $(LIBCHS)/F_Move.o: $(SLIBCHS)/F_Move.c 
-		$(CC) $(CFLAGS) $(SLIBCHS)/F_Move.c
+		$(CC) $(CFLAGS) $(LIBCHS)/F_Move.o $(SLIBCHS)/F_Move.c
 
 $(LIBCHS)/P_Move.o: $(SLIBCHS)/P_Move.c 
-		$(CC) $(CFLAGS) $(SLIBCHS)/P_Move.c
+		$(CC) $(CFLAGS) $(LIBCHS)/P_Move.o $(SLIBCHS)/P_Move.c
 
 $(LIBCHS)/Print_err.o: $(SLIBCHS)/Print_err.c 
-		$(CC) $(CFLAGS) $(SLIBCHS)/Print_err.c
+		$(CC) $(CFLAGS) $(LIBCHS)/Print_err.o $(SLIBCHS)/Print_err.c
 
 $(LIBCHS)/Print.o: $(SLIBCHS)/Print.c 
-		$(CC) $(CFLAGS) $(SLIBCHS)/Print.c
+		$(CC) $(CFLAGS) $(LIBCHS)/Print.o $(SLIBCHS)/Print.c
 
 $(LIBCHS)/StartDesk.o: $(SLIBCHS)/StartDesk.c 
-		$(CC) $(CFLAGS) $(SLIBCHS)/StartDesk.c 
+		$(CC) $(CFLAGS) $(LIBCHS)/StartDesk.o $(SLIBCHS)/StartDesk.c 
 
 -include F_Move.d P_Move.d Print.d Print_err.d StartDesk.d 
 
