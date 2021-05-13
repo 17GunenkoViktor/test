@@ -10,7 +10,6 @@ int main()
     int i, err; 
     char Desc[9][9];
     StartDesk(Desc);
-    move[0] = '6';
     Print(Desc);
     FILE* file;
     char arr[14];
