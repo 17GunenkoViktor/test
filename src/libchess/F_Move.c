@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "Print.h"
-int F_Move(char move[7], char Desc[9][9], char fig[1])
+int F_Move(char move[7], char Desc[9][9], char fig)
 {
     int cori, corj, corI, corJ; 
     switch (move[1]) {

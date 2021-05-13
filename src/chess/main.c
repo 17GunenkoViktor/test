@@ -1,14 +1,13 @@
-﻿#include <libchess/StartDesk.h>
-#include <libchess/Print.h>
-#include <libchess/F_Move.h>
-#include <libchess/P_Move.h>
-#include <libchess/Print_err.h>
+﻿#include "../libchess/StartDesk.h"
+#include "../libchess/Print.h"
+#include "../libchess/F_Move.h"
+#include "../libchess/P_Move.h"
+#include "../libchess/Print_err.h"
 #include <stdio.h>
 #include <string.h>
 int main()
 {
-    char move[7];
-    int i, k, cori, corj, corI, corJ, err; 
+    int i, k, err; 
     char Desc[9][9];
     StartDesk(Desc);
     move[0] = '6';
@@ -17,7 +16,7 @@ int main()
     char arr[14];
     char white[7];
     char black[7];
-    int c = 0, flag = 0;
+    int c = 0;
     file = fopen("Moves.txt", "r");
     while (fgets(arr, 14, file) != NULL) {
         i = 0;

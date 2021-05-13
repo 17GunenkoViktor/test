@@ -11,7 +11,7 @@ bin/chessw: $(CHS)/main.o $(LIBCHS)/F_Move.o $(LIBCHS)/P_Move.o $(LIBCHS)/Print_
 		$(CC) -Wall -Wextra -Werror -o $@ $^
 
 $(CHS)/main.o: $(SCHS)/main.c 
-		$(CC) $(CFLAGS) $(SCHS)/main.c
+		$(CC) $(CFLAGS) $(CHS)/main.o $(SCHS)/main.c
 
 $(LIBCHS)/F_Move.o: $(SLIBCHS)/F_Move.c 
 		$(CC) $(CFLAGS) $(SLIBCHS)/F_Move.c
